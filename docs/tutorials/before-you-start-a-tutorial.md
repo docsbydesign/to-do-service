@@ -15,7 +15,7 @@ To complete the tutorials in this section, you need the following:
 
 * A [GitHub account](https://github.com)
 * A development system (PC, Mac, or Linux) running a current or
-long-term support (LTS version of the operating system). 
+long-term support (LTS version of the operating system).
 * The following software on your development system:
     * [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) (for the command line)
     * [GitHub Desktop](https://desktop.github.com) (optional)
@@ -32,7 +32,7 @@ To test your development system:.
 
 1. Create and checkout a test branch of your fork of the To-Do-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `to-do-service` repo.
 
-    ```bash
+    ```shell
     cd <your GitHub repo workspace>
     ls
     # (see the to-do-service directory in the list)
@@ -47,13 +47,13 @@ To test your development system:.
 
 2. Make a test call to the service.
 
-    ```bash
+    ```shell
     curl http://localhost:3000/users
     ```
 
 3. If the service is running correctly, you should see a list of users from the service, such as in this example.
 
-    ```javascript
+    ```js
     [
         {
             "last_name": "Smith",

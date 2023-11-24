@@ -5,7 +5,7 @@ layout: page
 
 Base endpoint:
 
-```
+```shell
 
 {server_url}/users
 ```
@@ -19,7 +19,7 @@ the service first.
 
 Sample `user` resource
 
-```javascript
+```js
 
 {
     "last_name": "Smith",
@@ -29,7 +29,7 @@ Sample `user` resource
 }
 ```
 
-| Property name | type | Description |
+| Property name | Type | Description |
 | ------------- | ----------- | ----------- |
 | `last_name` | string | The user's last name |
 | `first_name` | string | The user's first name |

@@ -7,7 +7,7 @@ Returns an array of [`user`](user) objects that contains all users that have reg
 
 ## URL
 
-```curl
+```shell
 
 {server_url}/users
 ```
@@ -26,7 +26,7 @@ None
 
 ## Return body
 
-```javascript
+```js
 [
     {
         "last_name": "Smith",

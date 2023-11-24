@@ -15,13 +15,13 @@ Make sure you've completed the [Before you start a tutorial](before-you-start-a-
 
 ## Add a new task
 
-Adding a new task to the service requires that you add (`POST`) the details of a new [`task`](../api/user) resource to the service.
+Adding a new task to the service requires that you add (`POST`) the details of a new [`task`](../api/task) resource to the service.
 
 To add a new task:
 
 1. Make sure your local service is running, or start it by using this command, if it's not.
 
-    ```bash
+    ```shell
     cd <your-github-workspace>/to-do-service/api
     json-server -w to-do-db-source.json
     ```
@@ -35,24 +35,26 @@ To add a new task:
     * **Request body**:
         You can change the values of each property as you'd like.
 
-        ```javascript
+        ```js
         {
-            "task_title": "Get new tires",
-            "task_description": "Get new tires for Hoppity",
-            "task_due_date": "2024-03-11T14:00",
-            "task_warning": "-60"
+            "user_id": 3,
+            "title": "Get new tires",
+            "description": "Get new tires for Hoppity",
+            "due_date": "2024-03-11T14:00",
+            "warning": "-60"
         }
         ```
 
 1. In the Postman app, choose **Send** to make the request.
 1. Watch for the response body, which should look something like this. Note that the names should be the same as you used in your **Request body** and the response should include the new user's `id`.
 
-    ```javascript
+    ```js
     {
-        "task_title": "Get new tires",
-        "task_description": "Get new tires for Hoppity",
-        "task_due_date": "2024-03-11T14:00",
-        "task_warning": "-60",
+        "user_id": 3,
+        "title": "Get new tires",
+        "description": "Get new tires for Hoppity",
+        "due_date": "2024-03-11T14:00",
+        "warning": "-60",
         "id": 5
     }
     ```

@@ -41,4 +41,4 @@ When run locally for testing, the `{base_url}` is
 generally `http://localhost:3000`.
 
 * [user resource](api/user)
-* [task resource _(coming soon)_](#api-reference-docs)
+* [task resource](api/task)

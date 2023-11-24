@@ -8,7 +8,7 @@ Returns an array of  [`user`](user) objects that contains only the user specifie
 
 ## URL
 
-```curl
+```shell
 
 {server_url}/users/{id}
 ```
@@ -29,7 +29,7 @@ None
 
 ## Return body
 
-```javascript
+```js
 [
     {
         "last_name": "Smith",
